@@ -45,6 +45,11 @@ namespace DungeonsSample.Dungeons
         public string Description => dungeon.Description;
 
         /// <summary>
+        /// All <see cref="Quest"/>s in this dungeon.
+        /// </summary>
+        public IReadOnlyList<Quest> Quests => quests;
+
+        /// <summary>
         /// This transform defines the pose of the dungeon intro board.
         /// </summary>
         public Transform IntroBoardAnchor => introBoardAnchor;

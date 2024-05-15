@@ -1,4 +1,5 @@
 ﻿using DungeonsSample.Dungeons;
+using DungeonsSample.Quests.UI;
 using RealityCollective.ServiceFramework.Services;
 using UnityEngine;
 
@@ -14,6 +15,9 @@ namespace DungeonsSample.UI
 
         [SerializeField]
         private TMPro.TextMeshProUGUI descriptionText = null;
+
+        [SerializeField]
+        private UIQuestsList questList = null;
 
         private IDungeonsService dungeonsService;
 
@@ -41,6 +45,7 @@ namespace DungeonsSample.UI
             titleText.text = room.Title;
             descriptionText.text = room.Description;
             transform.SetPositionAndRotation(room.IntroBoardAnchor.position, room.IntroBoardAnchor.rotation);
+            questList.Bind(room.Quests);
             root.SetActive(true);
         }
 

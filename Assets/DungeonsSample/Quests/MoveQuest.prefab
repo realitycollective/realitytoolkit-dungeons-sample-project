@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b60e5878f825244b8be830f7c10e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  instruction: Move using smooth movement

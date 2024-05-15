@@ -66,4 +66,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0221cddfd06077547bcd7045a22d9f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instruction: 
+  instruction: Reach the target area

@@ -1,23 +1,18 @@
-﻿// Copyright (c) Reality Collective. All rights reserved.
+// Copyright (c) Reality Collective. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using RealityCollective.ServiceFramework.Services;
 using RealityToolkit.Locomotion;
 using RealityToolkit.Locomotion.Teleportation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace DungeonsSample.Quests
 {
     /// <summary>
-    /// For this quest, the user has to teleport at least once using all available
-    /// <see cref="ITeleportLocomotionProvider"/>s.
+    /// For this quest, the user has to teleport at least once using the <see cref="BlinkTeleportLocomotionProvider"/>s.
     /// </summary>
-    public class TeleportQuest : Quest, ILocomotionServiceHandler
+    public class BlinkTeleportQuest : Quest
     {
         private ILocomotionService locomotionService;
-        private Dictionary<Type, bool> teleportProviders;
 
         /// <inheritdoc/>
         protected override async void Awake()
@@ -28,14 +23,6 @@ namespace DungeonsSample.Quests
 
             locomotionService = ServiceManager.Instance.GetService<ILocomotionService>();
             locomotionService.Register(gameObject);
-
-            var teleportLocomotionProviders = ServiceManager.Instance.GetServices<ITeleportLocomotionProvider>();
-
-            teleportProviders = new Dictionary<Type, bool>();
-            foreach (var item in teleportLocomotionProviders)
-            {
-                teleportProviders.Add(item.GetType(), false);
-            }
         }
 
         /// <inheritdoc/>
@@ -61,10 +48,7 @@ namespace DungeonsSample.Quests
         /// <inheritdoc/>
         public void OnTeleportCompleted(LocomotionEventData eventData)
         {
-            var type = eventData.LocomotionProvider.GetType();
-            teleportProviders[type] = true;
-
-            if (teleportProviders.All(p => p.Value))
+            if (eventData.LocomotionProvider is BlinkTeleportLocomotionProvider)
             {
                 IsComplete = true;
             }

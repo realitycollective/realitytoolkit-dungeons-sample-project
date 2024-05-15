@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc678da19b25f94db6420c7b465016d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  instruction: Push your head through the wall until pitch black and wait for the
+    system to auto reset your into gameplay bounds

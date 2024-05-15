@@ -12,5 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f79051121fc0f4489954e49b66f075, type: 3}
   m_Name: DungeonRoom_01_Locomotion_Free
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: Free Movement
+  description: 'In this dungeon, you''ll experience the toolkit''s free movement
+    feature, which is part of the locomotion package.
+
+
+    Free movement lets your
+    users move around in the virtual environment without moving physically. Apart
+    from controller input your gaze direction will also impact movement direction.'
+  previousRoom: {fileID: 0}

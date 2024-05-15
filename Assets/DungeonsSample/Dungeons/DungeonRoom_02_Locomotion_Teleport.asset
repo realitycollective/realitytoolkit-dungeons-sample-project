@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f79051121fc0f4489954e49b66f075, type: 3}
   m_Name: DungeonRoom_02_Locomotion_Teleport
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: Teleportation
+  description: 'Teleportation is another way for your users to move around the virtual
+    environment safely. The locomotion package comes with three types of teleport
+    providers. Each implementing teleportation in a slightly different way.
+
+
+    In
+    this room free movement has been disabled again and you''ll have to rely on teleportation
+    to reach your goal.'
   previousRoom: {fileID: 11400000, guid: b22bf1d9083cd854db7e3f8b4c186505, type: 2}

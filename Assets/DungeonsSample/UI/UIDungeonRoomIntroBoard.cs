@@ -1,4 +1,7 @@
-﻿using DungeonsSample.Dungeons;
+﻿// Copyright (c) Reality Collective. All rights reserved.
+// Licensed under the MIT License. See LICENSE in the project root for license information.
+
+using DungeonsSample.Dungeons;
 using DungeonsSample.Quests.UI;
 using RealityCollective.ServiceFramework.Services;
 using UnityEngine;

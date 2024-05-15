@@ -40,5 +40,22 @@ namespace DungeonsSample.Dungeons
         /// The preceding <see cref="DungeonRoom"/>.
         /// </summary>
         public DungeonRoom PreviousRoom => previousRoom;
+
+        [Header("Room Feature Control")]
+        [SerializeField, Tooltip("If set, free movement is enabled in this room.")]
+        private bool freeMovement = true;
+
+        /// <summary>
+        /// If set, free movement is enabled in this room.
+        /// </summary>
+        public bool FreeMovement => freeMovement;
+
+        [SerializeField, Tooltip("If set, teleportation is enabled in this room.")]
+        private bool teleportation = true;
+
+        /// <summary>
+        /// If set, teleportation is enabled in this room.
+        /// </summary>
+        public bool Teleportation => teleportation;
     }
 }

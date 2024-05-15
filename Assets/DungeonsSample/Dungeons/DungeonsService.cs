@@ -1,17 +1,19 @@
-using RealityCollective.ServiceFramework.Definitions;
+// Copyright (c) Reality Collective. All rights reserved.
+// Licensed under the MIT License. See LICENSE in the project root for license information.
+
 using RealityCollective.ServiceFramework.Services;
+using UnityEngine;
 
 namespace DungeonsSample.Dungeons
 {
     [System.Runtime.InteropServices.Guid("f978dcf9-b1da-4246-b671-fed7220226d5")]
     public class DungeonsService : BaseServiceWithConstructor, IDungeonsService
     {
-        public DungeonsService(string name, uint priority, BaseProfile profile)
-            : base(name, priority)
-        {
-            // The constructor should be used to gather required properties from the profile (or cache the profile) and to ready any components needed.
-            // Note, during this call, not all services will be registered with the Service Framework, so this should only be used to ready this individual service.
-        }
+        /// <inheritdoc/>
+        public DungeonsService(string name, uint priority, DungeonsServiceProfile profile)
+            : base(name, priority) { }
+
+        private DungeonFeatureControlServiceModule featureControlServiceModule;
 
         /// <inheritdoc/>
         public DungeonController CurrentDungeon { get; private set; }
@@ -26,10 +28,22 @@ namespace DungeonsSample.Dungeons
         public event OnDungeonDelegate DungeonCleared;
 
         /// <inheritdoc/>
+        public override void Initialize()
+        {
+            if (!Application.isPlaying)
+            {
+                return;
+            }
+
+            featureControlServiceModule = ServiceManager.Instance.GetService<IDungeonsServiceModule>() as DungeonFeatureControlServiceModule;
+        }
+
+        /// <inheritdoc/>
         public void EnterDungeon(DungeonController dungeon)
         {
             CurrentDungeon = dungeon;
             IsCleared = false;
+            featureControlServiceModule.UpdateFeatures(CurrentDungeon.Data);
             DungeonEntered?.Invoke(dungeon);
         }
 

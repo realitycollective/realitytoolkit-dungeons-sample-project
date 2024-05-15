@@ -45,8 +45,8 @@ namespace DungeonsSample.UI
 
         private void DungeonService_DungeonEntered(DungeonController room)
         {
-            titleText.text = room.Title;
-            descriptionText.text = room.Description;
+            titleText.text = room.Data.Title;
+            descriptionText.text = room.Data.Description;
             transform.SetPositionAndRotation(room.IntroBoardAnchor.position, room.IntroBoardAnchor.rotation);
             questList.Bind(room.Quests);
             root.SetActive(true);

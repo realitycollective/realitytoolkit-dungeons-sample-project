@@ -49,7 +49,7 @@ MonoBehaviour:
       reference: f978dcf9-b1da-4246-b671-fed7220226d5
     name: Dungeons Service
     priority: 3
-    profile: {fileID: 0}
+    profile: {fileID: 11400000, guid: 9d20876f04191b44683789bd5363f511, type: 2}
     platformEntries:
       runtimePlatforms:
       - reference: 9869b29e-43bb-44cc-ae49-eb5c913263f9

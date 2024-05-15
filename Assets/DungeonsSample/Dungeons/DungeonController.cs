@@ -30,19 +30,9 @@ namespace DungeonsSample.Dungeons
         private IDungeonsService dungeonService;
 
         /// <summary>
-        /// The dungeon's identifier.
+        /// The <see cref="DungeonRoom"/> configuration.
         /// </summary>
-        public string Id => dungeon.Id;
-
-        /// <summary>
-        /// THe dungeon intro title.
-        /// </summary>
-        public string Title => dungeon.Title;
-
-        /// <summary>
-        /// The dungeon intro description.
-        /// </summary>
-        public string Description => dungeon.Description;
+        public DungeonRoom Data => dungeon;
 
         /// <summary>
         /// All <see cref="Quest"/>s in this dungeon.
@@ -134,8 +124,8 @@ namespace DungeonsSample.Dungeons
 
         private void DungeonService_DungeonCleared(DungeonController dungeon)
         {
-            if (this.dungeon.PreviousRoom.IsNull() ||
-                !string.Equals(this.dungeon.PreviousRoom.Id, dungeon.Id) ||
+            if (Data.PreviousRoom.IsNull() ||
+                !string.Equals(Data.PreviousRoom.Id, dungeon.Data.Id) ||
                 corridorEntranceDoor.IsNull())
             {
                 return;

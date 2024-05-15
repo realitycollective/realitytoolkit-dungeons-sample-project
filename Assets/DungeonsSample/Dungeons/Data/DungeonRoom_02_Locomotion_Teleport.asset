@@ -22,3 +22,5 @@ MonoBehaviour:
     this room free movement has been disabled again and you''ll have to rely on teleportation
     to reach your goal.'
   previousRoom: {fileID: 11400000, guid: b22bf1d9083cd854db7e3f8b4c186505, type: 2}
+  freeMovement: 0
+  teleportation: 1

@@ -21,3 +21,5 @@ MonoBehaviour:
     users move around in the virtual environment without moving physically. Apart
     from controller input your gaze direction will also impact movement direction.'
   previousRoom: {fileID: 0}
+  freeMovement: 1
+  teleportation: 0

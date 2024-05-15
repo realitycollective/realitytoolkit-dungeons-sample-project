@@ -22,7 +22,10 @@ namespace DungeonsSample.Dungeons
         private Transform introBoardAnchor = null;
 
         [SerializeField]
-        private AudioSource successAudioSource = null;
+        private AudioSource questCompleteAudioSource = null;
+
+        [SerializeField]
+        private AudioSource clearedAudioSource = null;
 
         [SerializeField, Tooltip("The door used to enter this room's corridor.")]
         private DungeonRoomDoor corridorEntranceDoor = null;
@@ -99,6 +102,7 @@ namespace DungeonsSample.Dungeons
             {
                 if (!quest.IsComplete)
                 {
+                    questCompleteAudioSource.Play();
                     return;
                 }
             }
@@ -136,7 +140,7 @@ namespace DungeonsSample.Dungeons
 
         private IEnumerator OpenCorridorDelayed()
         {
-            successAudioSource.Play();
+            clearedAudioSource.Play();
             yield return new WaitForSeconds(2f);
             corridorEntranceDoor.Open();
         }

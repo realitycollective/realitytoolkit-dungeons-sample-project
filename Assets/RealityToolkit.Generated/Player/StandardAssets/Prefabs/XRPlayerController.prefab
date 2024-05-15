@@ -129,7 +129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereCollider: {fileID: 367572774002706352}
-  maxSeverityDistanceThreshold: 0.2
 --- !u!135 &367572774002706352
 SphereCollider:
   m_ObjectHideFlags: 0

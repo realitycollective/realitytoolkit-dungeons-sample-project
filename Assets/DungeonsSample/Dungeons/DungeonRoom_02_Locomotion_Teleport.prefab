@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &141644609550509415
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1309508070387773885}
+    m_Modifications:
+    - target: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488669327366276753, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: m_Name
+      value: TeleportQuest
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+--- !u!4 &4021853842600065746 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3902166523341184949, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+  m_PrefabInstance: {fileID: 141644609550509415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5645811681824440771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5741749545209881764, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+  m_PrefabInstance: {fileID: 141644609550509415}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8ee1192c5863049aba7709195a48d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &6759470210228494478
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2894844225309594819, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894844225309594819, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894844225309594819, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894844225309594819, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894844225309594819, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894844225309594819, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894844225309594819, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894844225309594819, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894844225309594819, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894844225309594819, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759038207982675379, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: m_Name
+      value: DungeonRoom_02_Locomotion_Teleport
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 11400000, guid: 17754d87e7b4d5c4c831c34a160d8a38, type: 2}
+    - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: quests.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: 'quests.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5645811681824440771}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5756225882200559923, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4021853842600065746}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+--- !u!4 &1309508070387773885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5756225882200559923, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+  m_PrefabInstance: {fileID: 6759470210228494478}
+  m_PrefabAsset: {fileID: 0}

@@ -9,22 +9,22 @@ EditorBuildSettings:
     path: Assets/DungeonsSample/_Scenes/Base.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/DungeonsSample/_Scenes/SampleProject_01_Locomotion_Free.unity
+    path: Assets/DungeonsSample/_Scenes/DungeonRoom_01_Locomotion_Free.unity
     guid: 3d447a03a09470d41b833e0c181d94a5
   - enabled: 1
-    path: Assets/DungeonsSample/_Scenes/SampleProject_02_Locomotion_Teleport.unity
+    path: Assets/DungeonsSample/_Scenes/DungeonRoom_02_Locomotion_Teleport.unity
     guid: fc2fb06610db64d4583a905c893ac67f
   - enabled: 1
-    path: Assets/DungeonsSample/_Scenes/SampleProject_03_Player_Rig_Physics.unity
+    path: Assets/DungeonsSample/_Scenes/DungeonRoom_03_Player_Rig_Physics.unity
     guid: 9631e202d8e935a41a75fa6a36ec226b
   - enabled: 1
-    path: Assets/DungeonsSample/_Scenes/SampleProject_04_Player_Rig_Bounds.unity
+    path: Assets/DungeonsSample/_Scenes/DungeonRoom_04_Player_Rig_Bounds.unity
     guid: 588eef81d19955c44a2ab7940c8ab0a2
   - enabled: 1
-    path: Assets/DungeonsSample/_Scenes/SampleProject_05_Interactions.unity
+    path: Assets/DungeonsSample/_Scenes/DungeonRoom_05_Interactions.unity
     guid: f5a88e062a7594844a8b937f6c07b020
   - enabled: 1
-    path: Assets/DungeonsSample/_Scenes/SampleProject_06_Everything.unity
+    path: Assets/DungeonsSample/_Scenes/DungeonRoom_06_Everything.unity
     guid: e3191870ea852d8499d7de3f6d90ead7
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c861a17450972ca47927383cc333a65c, type: 2}

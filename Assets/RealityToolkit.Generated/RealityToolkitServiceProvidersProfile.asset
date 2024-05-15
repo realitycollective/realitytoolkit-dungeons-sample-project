@@ -12,7 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e313293fba4e5a946adc1cc90678c91c, type: 3}
   m_Name: RealityToolkitServiceProvidersProfile
   m_EditorClassIdentifier: 
-  configurations: []
+  configurations:
+  - instancedType:
+      reference: 18c9caf0-8d36-4add-bb49-cdf7561cf793
+    name: Input Service
+    priority: 0
+    profile: {fileID: 11400000, guid: a176466fbf4e44a087639abca7e5ba47, type: 2}
+    platformEntries:
+      runtimePlatforms:
+      - reference: 9869b29e-43bb-44cc-ae49-eb5c913263f9
+  - instancedType:
+      reference: 5c656ee3-fe7c-4fb3-b3ee-df3fc0d0973d
+    name: Player Service
+    priority: 0
+    profile: {fileID: 11400000, guid: 2b0ab6f5348646cebf8585d46c3a3edc, type: 2}
+    platformEntries:
+      runtimePlatforms:
+      - reference: 9869b29e-43bb-44cc-ae49-eb5c913263f9
+  - instancedType:
+      reference: 9453c088-285e-47aa-bfbb-dafd9109fdd5
+    name: Locomotion Service
+    priority: 1
+    profile: {fileID: 11400000, guid: 6c712a7ae61c3a94c97a821ae431e3d9, type: 2}
+    platformEntries:
+      runtimePlatforms:
+      - reference: 9869b29e-43bb-44cc-ae49-eb5c913263f9
+  - instancedType:
+      reference: 2cd645ac-a682-4493-8f4d-3e7293dd1038
+    name: Game Service
+    priority: 2
+    profile: {fileID: 11400000, guid: e874f0d7f31998f459e935941537e72a, type: 2}
+    platformEntries:
+      runtimePlatforms:
+      - reference: 9869b29e-43bb-44cc-ae49-eb5c913263f9
+  - instancedType:
+      reference: f978dcf9-b1da-4246-b671-fed7220226d5
+    name: Dungeons Service
+    priority: 3
+    profile: {fileID: 0}
+    platformEntries:
+      runtimePlatforms:
+      - reference: 9869b29e-43bb-44cc-ae49-eb5c913263f9
   initializeOnPlay: 0
   doNotDestroyServiceManagerOnLoad: 1
   sceneServiceConfiguration: []

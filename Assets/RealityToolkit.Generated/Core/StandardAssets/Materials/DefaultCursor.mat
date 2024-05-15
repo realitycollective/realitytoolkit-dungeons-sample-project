@@ -2,26 +2,52 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DefaultCursor
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: ALBEDO_OFF ALPHA_USAGE_OFF AMBIENTLIGHT_OFF CUBEMAP_OFF EMISSIVE_OFF
-    FRESNEL_OFF LIGHTMAP_OFF LIGHTPROBES_OFF LIGHT_OFF NEARCLIP_OFF NORMAL_OFF SHOWDEBUG_OFF
-    TINT_OFF VERTCOLOR_OFF _BORDER_LIGHT_USES_HOVER_COLOR _DISABLE_ALBEDO_MAP _EMISSION
-    _FOG_OFF _SPECULAR_HIGHLIGHTS
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _EMISSION
+  m_InvalidKeywords:
+  - ALBEDO_OFF
+  - ALPHA_USAGE_OFF
+  - AMBIENTLIGHT_OFF
+  - CUBEMAP_OFF
+  - EMISSIVE_OFF
+  - FRESNEL_OFF
+  - LIGHTMAP_OFF
+  - LIGHTPROBES_OFF
+  - LIGHT_OFF
+  - NEARCLIP_OFF
+  - NORMAL_OFF
+  - SHOWDEBUG_OFF
+  - TINT_OFF
+  - VERTCOLOR_OFF
+  - _BORDER_LIGHT_USES_HOVER_COLOR
+  - _DISABLE_ALBEDO_MAP
+  - _FOG_OFF
+  - _SPECULAR_HIGHLIGHTS
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  stringTagMap:
+    RenderType: Opaque
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -82,6 +108,23 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - ALBEDO: 0
     - ALPHA_TEST: 0
@@ -100,9 +143,14 @@ Material:
     - VERTCOLOR: 0
     - ZOFFSET_CONSTANT: 0
     - ZOFFSET_SLOPE: 0
+    - _AddPrecomputedVelocity: 0
     - _AlbedoAlphaMode: 0
     - _AlbedoAssignedAtRuntime: 0
+    - _AlphaClip: 0
     - _AlphaTestThreshold: 0.05
+    - _AlphaToMask: 0
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 1
     - _BlendOp: 0
     - _BorderLight: 0
     - _BorderLightOpaque: 0
@@ -114,6 +162,8 @@ Material:
     - _BumpScale: 1
     - _COLORMASK: 15
     - _CULL: 2
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
     - _ClippingBorder: 0
     - _ClippingBorderWidth: 0.025
     - _ClippingBox: 0
@@ -123,13 +173,16 @@ Material:
     - _ClippingSphere: 0
     - _ColorWriteMask: 15
     - _CubemapContribution: 1
+    - _Cull: 2
     - _CullMode: 2
     - _CustomMode: 0
     - _Cutoff: 0.5
     - _DSTBLEND: 10
+    - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DirectionalLight: 0
     - _DstBlend: 0
+    - _DstBlendAlpha: 0
     - _EdgeSmoothingValue: 0.002
     - _EnableChannelMap: 0
     - _EnableEmission: 0
@@ -141,6 +194,7 @@ Material:
     - _EnvironmentColorIntensity: 0.5
     - _EnvironmentColorThreshold: 1.5
     - _EnvironmentColoring: 0
+    - _EnvironmentReflections: 1
     - _FOG: 0
     - _FadeBeginDistance: 0.85
     - _FadeCompleteDistance: 0.5
@@ -168,6 +222,8 @@ Material:
     - _Parallax: 0.02
     - _ProximityLight: 0
     - _ProximityLightTwoSided: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
     - _Reflections: 0
     - _Refraction: 0
     - _RefractiveIndex: 0
@@ -184,14 +240,17 @@ Material:
     - _SpecularHighlights: 1
     - _SphericalHarmonics: 0
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
     - _Stencil: 0
     - _StencilComparison: 0
     - _StencilOperation: 0
     - _StencilReference: 0
+    - _Surface: 0
     - _TriplanarMappingBlendSharpness: 4
     - _UVSec: 0
     - _VertColorScale: 1
     - _VertexColors: 0
+    - _WorkflowMode: 1
     - _ZTEST: 8
     - _ZTest: 4
     - _ZWRITE: 1
@@ -199,6 +258,7 @@ Material:
     m_Colors:
     - _AlphaScale: {r: 1, g: 0, b: 0, a: 0}
     - _AmbientColor: {r: 0.125, g: 0.125, b: 0.125, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BounceColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
     - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
     - _ClippingBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
@@ -223,7 +283,22 @@ Material:
     - _NormalAlphaScale: {r: 1, g: 0, b: 0, a: 0}
     - _NormalScale: {r: 1, g: 1, b: 1, a: 0}
     - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecPower: {r: 60, g: 0, b: 1, a: 0}
     - _TintColor: {r: 1, g: 1, b: 1, a: 1}
     - _UplightColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &3282772770548070717
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9

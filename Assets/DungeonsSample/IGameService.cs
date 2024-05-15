@@ -3,7 +3,7 @@
 
 using RealityCollective.ServiceFramework.Interfaces;
 
-namespace DungeonsSample.Interfaces
+namespace DungeonsSample
 {
     public interface IGameService : IService { }
 }

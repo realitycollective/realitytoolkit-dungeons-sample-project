@@ -6,7 +6,7 @@ using UnityEngine;
 namespace DungeonsSample.Dungeons
 {
     /// <summary>
-    /// Just a simple door controller for <see cref="SampleRoom"/> enter and exit doors.
+    /// Just a simple door controller for <see cref="DungeonRoom"/> enter and exit doors.
     /// </summary>
     [RequireComponent(typeof(AudioSource))]
     public class DungeonRoomDoor : MonoBehaviour

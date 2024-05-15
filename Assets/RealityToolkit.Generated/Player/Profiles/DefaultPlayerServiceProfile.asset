@@ -20,7 +20,23 @@ MonoBehaviour:
     profile: {fileID: 11400000, guid: c02516a14adf1ff45b2e6feaefd1d090, type: 2}
     platformEntries:
       runtimePlatforms:
-      - reference: 9869b29e-43bb-44cc-ae49-eb5c913263f9
+      - reference: 3dfb96a6-7f67-4f83-835b-32725bc0a2c0
+  - instancedType:
+      reference: 83eff552-adf4-47c8-ad53-df7406856d3f
+    name: Meta Player Rig Service Module
+    priority: 2
+    profile: {fileID: 11400000, guid: 69601914bd8789b49bc45cc0a9220b4d, type: 2}
+    platformEntries:
+      runtimePlatforms:
+      - reference: db1acc26-ec8d-4bc6-afca-c51351b2da2e
+  - instancedType:
+      reference: 01f7685f-40a4-49c1-b0cf-8d17dee1fb2b
+    name: Pico Player Rig Service Module
+    priority: 3
+    profile: {fileID: 11400000, guid: 180d48ab9a306fa4f8fccb465ad411fa, type: 2}
+    platformEntries:
+      runtimePlatforms:
+      - reference: 91d05795-d44e-4a4d-8055-e770b592137f
   - instancedType:
       reference: 92fef470-917e-4d54-9099-6c3e857b2bbc
     name: Default Body Pose Provider Module
@@ -32,7 +48,7 @@ MonoBehaviour:
   - instancedType:
       reference: a68682d3-3e9d-4d56-8a32-9805f58928f8
     name: Player Bounds Module
-    priority: 1
+    priority: 3
     profile: {fileID: 11400000, guid: 9fbf13d08b435e747b145c505b5b7896, type: 2}
     platformEntries:
       runtimePlatforms:

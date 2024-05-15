@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   description: 
+  previousRoom: {fileID: 11400000, guid: b22bf1d9083cd854db7e3f8b4c186505, type: 2}

@@ -130,6 +130,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 17754d87e7b4d5c4c831c34a160d8a38, type: 2}
     - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: dungeon
+      value: 
+      objectReference: {fileID: 11400000, guid: 17754d87e7b4d5c4c831c34a160d8a38, type: 2}
+    - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
       propertyPath: quests.Array.size
       value: 1
       objectReference: {fileID: 0}

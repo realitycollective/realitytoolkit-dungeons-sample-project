@@ -36,7 +36,7 @@ namespace DungeonsSample.UI
             }
         }
 
-        private void DungeonService_DungeonEntered(DungeonRoomController room)
+        private void DungeonService_DungeonEntered(DungeonController room)
         {
             titleText.text = room.Title;
             descriptionText.text = room.Description;
@@ -44,7 +44,7 @@ namespace DungeonsSample.UI
             root.SetActive(true);
         }
 
-        private void DungeonService_DungeonCleared(DungeonRoomController room) => Close();
+        private void DungeonService_DungeonCleared(DungeonController room) => Close();
 
         private void Close() => root.SetActive(false);
     }

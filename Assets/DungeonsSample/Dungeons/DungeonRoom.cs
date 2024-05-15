@@ -12,6 +12,11 @@ namespace DungeonsSample.Dungeons
     [CreateAssetMenu(fileName = "DungeonRoom", menuName = "Dungeons Sample/Dungeon Room", order = 0)]
     public class DungeonRoom : ScriptableObject
     {
+        /// <summary>
+        /// The dungeon's identifier.
+        /// </summary>
+        public string Id => name;
+
         [SerializeField, Tooltip("The room intro title.")]
         private string title = null;
 
@@ -27,5 +32,13 @@ namespace DungeonsSample.Dungeons
         /// The room intro description.
         /// </summary>
         public string Description => description;
+
+        [SerializeField]
+        private DungeonRoom previousRoom = null;
+
+        /// <summary>
+        /// The preceding <see cref="DungeonRoom"/>.
+        /// </summary>
+        public DungeonRoom PreviousRoom => previousRoom;
     }
 }

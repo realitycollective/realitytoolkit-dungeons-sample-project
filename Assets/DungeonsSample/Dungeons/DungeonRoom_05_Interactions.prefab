@@ -50,10 +50,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6759038207982675379, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
       propertyPath: m_Name
-      value: DungeonRoom_05_Interactions Variant
+      value: DungeonRoom_05_Interactions
       objectReference: {fileID: 0}
     - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
       propertyPath: room
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b9b943d62f19794c965300cafd8e764, type: 2}
+    - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: dungeon
       value: 
       objectReference: {fileID: 11400000, guid: 4b9b943d62f19794c965300cafd8e764, type: 2}
     m_RemovedComponents: []

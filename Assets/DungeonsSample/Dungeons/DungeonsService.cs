@@ -14,7 +14,7 @@ namespace DungeonsSample.Dungeons
         }
 
         /// <inheritdoc/>
-        public DungeonRoomController CurrentDungeon { get; private set; }
+        public DungeonController CurrentDungeon { get; private set; }
 
         /// <inheritdoc/>
         public bool IsCleared { get; private set; }
@@ -26,7 +26,7 @@ namespace DungeonsSample.Dungeons
         public event OnDungeonDelegate DungeonCleared;
 
         /// <inheritdoc/>
-        public void EnterDungeon(DungeonRoomController dungeon)
+        public void EnterDungeon(DungeonController dungeon)
         {
             CurrentDungeon = dungeon;
             IsCleared = false;
@@ -34,7 +34,7 @@ namespace DungeonsSample.Dungeons
         }
 
         /// <inheritdoc/>
-        public void ClearDungeon(DungeonRoomController dungeon)
+        public void ClearDungeon(DungeonController dungeon)
         {
             if (dungeon != CurrentDungeon || IsCleared)
             {

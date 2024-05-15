@@ -7,7 +7,7 @@ using UnityEngine;
 namespace DungeonsSample.Quests
 {
     /// <summary>
-    /// Abstract base for any kind of quest the user has to perform within the sample experience.
+    /// Abstract base for any kind of quest the user has to perform within the experience.
     /// </summary>
     public abstract class Quest : MonoBehaviour
     {

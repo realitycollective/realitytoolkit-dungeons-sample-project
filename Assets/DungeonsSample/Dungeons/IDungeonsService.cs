@@ -5,14 +5,14 @@ using RealityCollective.ServiceFramework.Interfaces;
 
 namespace DungeonsSample.Dungeons
 {
-    public delegate void OnDungeonDelegate(DungeonRoomController room);
+    public delegate void OnDungeonDelegate(DungeonController dungeon);
 
     public interface IDungeonsService : IService
     {
         /// <summary>
         /// The most recent <see cref="DungeonRoom"/> the player has progressed to.
         /// </summary>
-        DungeonRoomController CurrentDungeon { get; }
+        DungeonController CurrentDungeon { get; }
 
         /// <summary>
         /// Has <see cref="DungeonRoom"/> been cleared?
@@ -33,12 +33,12 @@ namespace DungeonsSample.Dungeons
         /// Makes the <paramref name="dungeon"/> the <see cref="CurrentDungeon"/>.
         /// </summary>
         /// <param name="dungeon">The <see cref="DungeonRoom"/> entered.</param>
-        void EnterDungeon(DungeonRoomController dungeon);
+        void EnterDungeon(DungeonController dungeon);
 
         /// <summary>
         /// Clears the <paramref name="dungeon"/> and unlocks the next <see cref="DungeonRoom"/>.
         /// </summary>
         /// <param name="dungeon">The <see cref="DungeonRoom"/> cleared.</param>
-        void ClearDungeon(DungeonRoomController dungeon);
+        void ClearDungeon(DungeonController dungeon);
     }
 }

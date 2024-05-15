@@ -10,37 +10,42 @@ using UnityEngine;
 
 namespace DungeonsSample.Dungeons
 {
-    public class DungeonRoomController : MonoBehaviour
+    public class DungeonController : MonoBehaviour
     {
         [SerializeField]
-        private DungeonRoom room = null;
+        private DungeonRoom dungeon = null;
 
         [SerializeField]
         private List<Quest> quests = null;
 
-        [SerializeField, Tooltip("This transform defines the pose of the room intro board.")]
+        [SerializeField, Tooltip("This transform defines the pose of the dungeon intro board.")]
         private Transform introBoardAnchor = null;
 
         [SerializeField]
         private AudioSource successAudioSource = null;
 
-        [SerializeField, Tooltip("The door used to exit the room.")]
-        private DungeonRoomDoor exitDoor = null;
+        [SerializeField, Tooltip("The door used to enter this room's corridor.")]
+        private DungeonRoomDoor corridorEntranceDoor = null;
 
-        private IDungeonsService sampleProjectService;
+        private IDungeonsService dungeonService;
 
         /// <summary>
-        /// THe room intro title.
+        /// The dungeon's identifier.
         /// </summary>
-        public string Title => room.Title;
+        public string Id => dungeon.Id;
 
         /// <summary>
-        /// The room intro description.
+        /// THe dungeon intro title.
         /// </summary>
-        public string Description => room.Description;
+        public string Title => dungeon.Title;
 
         /// <summary>
-        /// This transform defines the pose of the room intro board.
+        /// The dungeon intro description.
+        /// </summary>
+        public string Description => dungeon.Description;
+
+        /// <summary>
+        /// This transform defines the pose of the dungeon intro board.
         /// </summary>
         public Transform IntroBoardAnchor => introBoardAnchor;
 
@@ -51,9 +56,9 @@ namespace DungeonsSample.Dungeons
         {
             await ServiceManager.WaitUntilInitializedAsync();
 
-            sampleProjectService = ServiceManager.Instance.GetService<IDungeonsService>();
-            sampleProjectService.DungeonEntered += SampleProjectService_DungeonEntered;
-            sampleProjectService.DungeonCleared += SampleProjectService_DungeonCleared;
+            dungeonService = ServiceManager.Instance.GetService<IDungeonsService>();
+            dungeonService.DungeonEntered += DungeonService_DungeonEntered;
+            dungeonService.DungeonCleared += DungeonService_DungeonCleared;
 
             if (quests != null)
             {
@@ -81,17 +86,17 @@ namespace DungeonsSample.Dungeons
                 }
             }
 
-            if (sampleProjectService != null)
+            if (dungeonService != null)
             {
-                sampleProjectService.DungeonEntered -= SampleProjectService_DungeonEntered;
-                sampleProjectService.DungeonCleared -= SampleProjectService_DungeonCleared;
+                dungeonService.DungeonEntered -= DungeonService_DungeonEntered;
+                dungeonService.DungeonCleared -= DungeonService_DungeonCleared;
             }
         }
 
         /// <summary>
         /// The player has entered the room.
         /// </summary>
-        public void OnRoomEntered() => sampleProjectService.EnterDungeon(this);
+        public void OnRoomEntered() => dungeonService.EnterDungeon(this);
 
         private void Quest_Completed()
         {
@@ -103,12 +108,12 @@ namespace DungeonsSample.Dungeons
                 }
             }
 
-            sampleProjectService.ClearDungeon(this);
+            dungeonService.ClearDungeon(this);
         }
 
-        private void SampleProjectService_DungeonEntered(DungeonRoomController room)
+        private void DungeonService_DungeonEntered(DungeonController dungeon)
         {
-            if (this != room)
+            if (this != dungeon)
             {
                 return;
             }
@@ -122,21 +127,23 @@ namespace DungeonsSample.Dungeons
             }
         }
 
-        private void SampleProjectService_DungeonCleared(DungeonRoomController room)
+        private void DungeonService_DungeonCleared(DungeonController dungeon)
         {
-            if (this != room || exitDoor.IsNull())
+            if (this.dungeon.PreviousRoom.IsNull() ||
+                !string.Equals(this.dungeon.PreviousRoom.Id, dungeon.Id) ||
+                corridorEntranceDoor.IsNull())
             {
                 return;
             }
 
-            StartCoroutine(OpenExitDelayed());
+            StartCoroutine(OpenCorridorDelayed());
         }
 
-        private IEnumerator OpenExitDelayed()
+        private IEnumerator OpenCorridorDelayed()
         {
             successAudioSource.Play();
             yield return new WaitForSeconds(2f);
-            exitDoor.Open();
+            corridorEntranceDoor.Open();
         }
     }
 }

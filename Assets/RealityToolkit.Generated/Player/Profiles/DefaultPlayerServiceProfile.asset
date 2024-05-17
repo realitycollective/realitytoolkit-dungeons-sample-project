@@ -24,7 +24,7 @@ MonoBehaviour:
   - instancedType:
       reference: 83eff552-adf4-47c8-ad53-df7406856d3f
     name: Meta Player Rig Service Module
-    priority: 2
+    priority: 0
     profile: {fileID: 11400000, guid: 69601914bd8789b49bc45cc0a9220b4d, type: 2}
     platformEntries:
       runtimePlatforms:
@@ -32,7 +32,7 @@ MonoBehaviour:
   - instancedType:
       reference: 01f7685f-40a4-49c1-b0cf-8d17dee1fb2b
     name: Pico Player Rig Service Module
-    priority: 3
+    priority: 1
     profile: {fileID: 11400000, guid: 180d48ab9a306fa4f8fccb465ad411fa, type: 2}
     platformEntries:
       runtimePlatforms:

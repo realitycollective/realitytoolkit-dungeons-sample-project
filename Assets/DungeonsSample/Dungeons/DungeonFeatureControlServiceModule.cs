@@ -5,6 +5,7 @@ using RealityCollective.ServiceFramework.Definitions;
 using RealityCollective.ServiceFramework.Modules;
 using RealityCollective.ServiceFramework.Services;
 using RealityToolkit.Locomotion;
+using RealityToolkit.Locomotion.Teleportation;
 
 namespace DungeonsSample.Dungeons
 {
@@ -25,6 +26,9 @@ namespace DungeonsSample.Dungeons
             var locomotionService = ServiceManager.Instance.GetService<ILocomotionService>();
             locomotionService.MovementEnabled = dungeon.FreeMovement;
             locomotionService.TeleportationEnabled = dungeon.Teleportation;
+
+            var teleportValidationServiceModule = ServiceManager.Instance.GetService<ITeleportValidationServiceModule>();
+            teleportValidationServiceModule.AnchorsOnly = dungeon.AnchorsOnly;
         }
     }
 }

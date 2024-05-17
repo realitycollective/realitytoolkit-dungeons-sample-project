@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.01, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9115750934253910319}
@@ -114,7 +114,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.01, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 903739008056810026}
@@ -200,7 +200,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.01, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1973058151219067480}
@@ -379,7 +379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5267524540118160858, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.43
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5267524540118160858, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -412,14 +412,6 @@ PrefabInstance:
     - target: {fileID: 7726994576731062694, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_Name
       value: ReachAreaQuest (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8011345333488342312, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8011345333488342312, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
-      propertyPath: m_Size.z
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8011345333488342312, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_Center.y
@@ -463,7 +455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5267524540118160858, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.47
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 5267524540118160858, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -471,7 +463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5267524540118160858, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5267524540118160858, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -504,14 +496,6 @@ PrefabInstance:
     - target: {fileID: 7726994576731062694, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_Name
       value: ReachAreaQuest
-      objectReference: {fileID: 0}
-    - target: {fileID: 8011345333488342312, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8011345333488342312, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
-      propertyPath: m_Size.z
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8011345333488342312, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_Center.y
@@ -555,7 +539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5267524540118160858, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.25
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 5267524540118160858, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -563,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5267524540118160858, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.29
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5267524540118160858, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -596,14 +580,6 @@ PrefabInstance:
     - target: {fileID: 7726994576731062694, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_Name
       value: ReachAreaQuest (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8011345333488342312, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8011345333488342312, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
-      propertyPath: m_Size.z
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8011345333488342312, guid: 8a3b75ee979b5564e90d173b3701eb8b, type: 3}
       propertyPath: m_Center.y

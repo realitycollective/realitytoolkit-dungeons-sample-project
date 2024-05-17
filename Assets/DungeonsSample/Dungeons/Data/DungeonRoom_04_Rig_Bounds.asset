@@ -17,3 +17,4 @@ MonoBehaviour:
   previousRoom: {fileID: 11400000, guid: 5f08a6fefa120aa4182935a007d6f4cb, type: 2}
   freeMovement: 1
   teleportation: 1
+  anchorsOnly: 0

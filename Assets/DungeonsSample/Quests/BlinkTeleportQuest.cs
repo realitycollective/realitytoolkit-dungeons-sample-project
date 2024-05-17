@@ -37,6 +37,13 @@ namespace DungeonsSample.Quests
         }
 
         /// <inheritdoc/>
+        protected override void OnComplete()
+        {
+            locomotionService.MovementEnabled = true;
+            ServiceManager.Instance.GetService<ITeleportValidationServiceModule>().AnchorsOnly = false;
+        }
+
+        /// <inheritdoc/>
         public void OnMoving(LocomotionEventData eventData) { }
 
         /// <inheritdoc/>

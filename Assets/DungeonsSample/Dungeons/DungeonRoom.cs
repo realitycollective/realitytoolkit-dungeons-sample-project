@@ -50,6 +50,7 @@ namespace DungeonsSample.Dungeons
         /// </summary>
         public bool FreeMovement => freeMovement;
 
+        [Header("Teleportation")]
         [SerializeField, Tooltip("If set, teleportation is enabled in this room.")]
         private bool teleportation = true;
 
@@ -57,5 +58,13 @@ namespace DungeonsSample.Dungeons
         /// If set, teleportation is enabled in this room.
         /// </summary>
         public bool Teleportation => teleportation;
+
+        [SerializeField, Tooltip("If set, teleport only works for anchors.")]
+        private bool anchorsOnly = false;
+
+        /// <summary>
+        /// If set, teleport only works for anchors.
+        /// </summary>
+        public bool AnchorsOnly => anchorsOnly;
     }
 }

@@ -37,6 +37,12 @@ namespace DungeonsSample.Quests
         }
 
         /// <inheritdoc/>
+        protected override void OnComplete()
+        {
+            locomotionService.EnableLocomotionProvider(typeof(BlinkTeleportLocomotionProvider));
+        }
+
+        /// <inheritdoc/>
         public void OnMoving(LocomotionEventData eventData) { }
 
         /// <inheritdoc/>

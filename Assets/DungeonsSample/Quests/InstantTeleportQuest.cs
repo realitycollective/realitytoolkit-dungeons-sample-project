@@ -37,6 +37,12 @@ namespace DungeonsSample.Quests
         }
 
         /// <inheritdoc/>
+        protected override void OnComplete()
+        {
+            locomotionService.EnableLocomotionProvider(typeof(DashTeleportLocomotionProvider));
+        }
+
+        /// <inheritdoc/>
         public void OnMoving(LocomotionEventData eventData) { }
 
         /// <inheritdoc/>

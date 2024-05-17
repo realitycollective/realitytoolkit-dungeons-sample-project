@@ -20,7 +20,9 @@ MonoBehaviour:
 
     In
     this room free movement has been disabled again and you''ll have to rely on teleportation
-    to reach your goal.'
+    to reach your goal. Teleportation has been restricted to defined anchor positions.
+    Each anchor will activate a new kind of teleportation.'
   previousRoom: {fileID: 11400000, guid: b22bf1d9083cd854db7e3f8b4c186505, type: 2}
   freeMovement: 0
   teleportation: 1
+  anchorsOnly: 1

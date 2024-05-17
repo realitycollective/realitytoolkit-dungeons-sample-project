@@ -306,6 +306,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5741749545209881764, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
+      propertyPath: instruction
+      value: Teleport to the red marker using instant teleport. This will activate
+        dash teleport.
+      objectReference: {fileID: 0}
     - target: {fileID: 6488669327366276753, guid: 8c8854d024bcf9e4a94759a1ee4b8650, type: 3}
       propertyPath: m_Name
       value: InstantTeleportQuest
@@ -543,6 +548,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 375724767616649132, guid: 89e8f999e659e2e4ea06334553687e0d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8856998512777325692}
+    - targetCorrespondingSourceObject: {fileID: 375724767616649132, guid: 89e8f999e659e2e4ea06334553687e0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3814918633941348702}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89e8f999e659e2e4ea06334553687e0d, type: 3}
 --- !u!114 &1201554414724318148 stripped
@@ -560,6 +568,76 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 375724767616649132, guid: 89e8f999e659e2e4ea06334553687e0d, type: 3}
   m_PrefabInstance: {fileID: 5350782533728705646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5856785664005745818
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5726076177862941634}
+    m_Modifications:
+    - target: {fileID: -324000623714798473, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: teleportProviderType.reference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2373677441216513552, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_Name
+      value: LocomotionConfigurationTrigger_Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329093611176205764, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329093611176205764, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329093611176205764, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329093611176205764, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329093611176205764, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329093611176205764, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329093611176205764, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7389195175373213395, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7389195175373213395, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7389195175373213395, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_Size.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7389195175373213395, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+      propertyPath: m_Center.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+--- !u!4 &3814918633941348702 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7329093611176205764, guid: 343777a42f2991541a2ea4a0a2d556ff, type: 3}
+  m_PrefabInstance: {fileID: 5856785664005745818}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6146483826953018522
 PrefabInstance:
@@ -733,6 +811,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1309508070387773885}
     m_Modifications:
+    - target: {fileID: -8476831651339793262, guid: f34ca8b403ac45f44a88aed09fb00ee5, type: 3}
+      propertyPath: instruction
+      value: Teleport to the teleport anchor to enable free movement again.
+      objectReference: {fileID: 0}
     - target: {fileID: 6271112574789875353, guid: f34ca8b403ac45f44a88aed09fb00ee5, type: 3}
       propertyPath: m_Name
       value: BlinkTeleportQuest
@@ -809,6 +891,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1309508070387773885}
     m_Modifications:
+    - target: {fileID: -730481452825526750, guid: 74e21f505e0761f47a16d7252ca26058, type: 3}
+      propertyPath: instruction
+      value: Use dash teleport to teleport to the green marker. This will activate
+        blink teleport.
+      objectReference: {fileID: 0}
     - target: {fileID: 5108538490693626783, guid: 74e21f505e0761f47a16d7252ca26058, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.76

@@ -460,6 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a6a6ff4c7043642a7f8f91e257d156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openVerticalOffset: 3
 --- !u!82 &613116769961923238
 AudioSource:
   m_ObjectHideFlags: 0
@@ -576,8 +577,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.533333, y: 4, z: 0.2000001}
-  m_Center: {x: 0, y: 2, z: 0.0000001527369}
+  m_Size: {x: 2.533333, y: 3.6, z: 0.20000008}
+  m_Center: {x: 0, y: 1.8, z: 0.00000013411045}
 --- !u!1 &6714903643650760556 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6126729257426582880, guid: 2096ab2668669714289b30695be3b373, type: 3}
@@ -595,6 +596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a6a6ff4c7043642a7f8f91e257d156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openVerticalOffset: 3
 --- !u!82 &8929715993410618011
 AudioSource:
   m_ObjectHideFlags: 0
@@ -711,8 +713,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.533333, y: 4, z: 0.2000001}
-  m_Center: {x: 0, y: 2, z: 0.0000001527369}
+  m_Size: {x: 2.533333, y: 3.6, z: 0.20000008}
+  m_Center: {x: 0, y: 1.8, z: 0.00000013411045}
 --- !u!4 &7015919902430944285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7596217421814152721, guid: 2096ab2668669714289b30695be3b373, type: 3}

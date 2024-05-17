@@ -7,6 +7,7 @@ using RealityCollective.Utilities.Extensions;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DungeonsSample.Dungeons
 {
@@ -29,6 +30,9 @@ namespace DungeonsSample.Dungeons
 
         [SerializeField, Tooltip("The door used to enter this room's corridor.")]
         private DungeonRoomDoor corridorEntranceDoor = null;
+
+        [SerializeField]
+        private UnityEvent onCleared = null;
 
         private IDungeonsService dungeonService;
 
@@ -128,6 +132,12 @@ namespace DungeonsSample.Dungeons
 
         private void DungeonService_DungeonCleared(DungeonController dungeon)
         {
+            if (this == dungeon)
+            {
+                onCleared?.Invoke();
+                return;
+            }
+
             if (Data.PreviousRoom.IsNull() ||
                 !string.Equals(Data.PreviousRoom.Id, dungeon.Data.Id) ||
                 corridorEntranceDoor.IsNull())

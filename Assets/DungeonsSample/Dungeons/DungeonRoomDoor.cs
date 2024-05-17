@@ -11,9 +11,11 @@ namespace DungeonsSample.Dungeons
     [RequireComponent(typeof(AudioSource))]
     public class DungeonRoomDoor : MonoBehaviour
     {
+        [SerializeField]
+        private float openVerticalOffset = 3f;
+
         private Vector3 closedPosition;
         private Vector3 openPosition;
-        private const float openVerticalOffset = 3.8f;
         private AudioSource audioSource;
 
         private bool isOpening;

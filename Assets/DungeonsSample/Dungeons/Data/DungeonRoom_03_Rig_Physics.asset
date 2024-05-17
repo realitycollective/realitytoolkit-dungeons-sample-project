@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f79051121fc0f4489954e49b66f075, type: 3}
   m_Name: DungeonRoom_03_Rig_Physics
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: Player Physics
+  description: The Reality Toolkit comes with a great xr player controller that allows
+    your player to interact with the environment. For this dungeon teleportation
+    has been disabled again. Try and find a way to reach the other side of the room
+    using free movement.
   previousRoom: {fileID: 11400000, guid: 17754d87e7b4d5c4c831c34a160d8a38, type: 2}
   freeMovement: 1
   teleportation: 0

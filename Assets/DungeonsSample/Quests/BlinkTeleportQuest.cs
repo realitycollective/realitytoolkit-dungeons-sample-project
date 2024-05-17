@@ -10,7 +10,7 @@ namespace DungeonsSample.Quests
     /// <summary>
     /// For this quest, the user has to teleport at least once using the <see cref="BlinkTeleportLocomotionProvider"/>s.
     /// </summary>
-    public class BlinkTeleportQuest : Quest
+    public class BlinkTeleportQuest : Quest, ILocomotionServiceHandler
     {
         private ILocomotionService locomotionService;
 

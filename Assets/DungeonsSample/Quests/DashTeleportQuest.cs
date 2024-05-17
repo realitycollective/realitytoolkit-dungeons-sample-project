@@ -10,7 +10,7 @@ namespace DungeonsSample.Quests
     /// <summary>
     /// For this quest, the user has to teleport at least once using the <see cref="DashTeleportLocomotionProvider"/>s.
     /// </summary>
-    public class DashTeleportQuest : Quest
+    public class DashTeleportQuest : Quest, ILocomotionServiceHandler
     {
         private ILocomotionService locomotionService;
 

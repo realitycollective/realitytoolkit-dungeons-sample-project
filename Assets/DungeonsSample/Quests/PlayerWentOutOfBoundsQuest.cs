@@ -34,6 +34,12 @@ namespace DungeonsSample.Quests
             base.OnDestroy();
         }
 
-        private void PlayerBoundsModule_PlayerOutOfBounds(float severity, UnityEngine.Vector3 returnToBoundsDirection) => IsComplete = true;
+        private void PlayerBoundsModule_PlayerOutOfBounds(float severity, UnityEngine.Vector3 returnToBoundsDirection)
+        {
+            if (severity >= .5f)
+            {
+                IsComplete = true;
+            }
+        }
     }
 }

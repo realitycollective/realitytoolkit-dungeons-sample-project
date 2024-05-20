@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5, z: 20}
-  m_LocalScale: {x: 10, y: 10, z: 2}
+  m_LocalScale: {x: 5, y: 10, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2476479694401936827}
@@ -182,7 +182,7 @@ PrefabInstance:
       objectReference: {fileID: 5796917319695184200}
     - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
       propertyPath: onCleared.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
       propertyPath: onCleared.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -223,6 +223,10 @@ PrefabInstance:
     - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
       propertyPath: onCleared.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
+      propertyPath: onCleared.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7767495794191482700, guid: 6e3cb40193593c740a4c5c49442808b7, type: 3}
       propertyPath: onCleared.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -273,7 +277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3689837730269085395, guid: 89559b07847a29f4682a7fb21f1cc676, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3689837730269085395, guid: 89559b07847a29f4682a7fb21f1cc676, type: 3}
       propertyPath: m_LocalScale.y
@@ -386,6 +390,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4632790772298096257, guid: cbed13450e4ba5846ac5789da757a408, type: 3}
+      propertyPath: instruction
+      value: Push your head through the red wall to trigger the player out of bounds
+        detection
+      objectReference: {fileID: 0}
     - target: {fileID: 5763012109151182968, guid: cbed13450e4ba5846ac5789da757a408, type: 3}
       propertyPath: m_Name
       value: PlayerWentOutOfBoundsQuest
@@ -419,6 +428,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5012661022685239371}
     m_Modifications:
+    - target: {fileID: -6855403996617114868, guid: 9721e3a13ba541841ba7a7ff6c80be70, type: 3}
+      propertyPath: instruction
+      value: Push your head through the red wall until pitch black and wait for the
+        system to auto reset your into gameplay bounds
+      objectReference: {fileID: 0}
     - target: {fileID: 1589423062796095820, guid: 9721e3a13ba541841ba7a7ff6c80be70, type: 3}
       propertyPath: m_Name
       value: PlayerAutoBackInBounds

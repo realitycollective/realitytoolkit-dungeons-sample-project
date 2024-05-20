@@ -32,6 +32,9 @@ namespace DungeonsSample
             }
         }
 
+        /// <inheritdoc/>
+        public void UnloadLevel(Scene scene) => SceneManager.UnloadSceneAsync(scene);
+
         private bool IsSceneLoaded(string sceneName)
         {
             for (var i = 0; i < SceneManager.loadedSceneCount; i++)

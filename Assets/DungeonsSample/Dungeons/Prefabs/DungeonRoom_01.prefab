@@ -59,6 +59,9 @@ MonoBehaviour:
   questCompleteAudioSource: {fileID: 4162377748303568395}
   clearedAudioSource: {fileID: 7724042983730559512}
   corridorEntranceDoor: {fileID: 3661938465223031245}
+  onCleared:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!82 &7724042983730559512
 AudioSource:
   m_ObjectHideFlags: 0
@@ -892,7 +895,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
       propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
       propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -903,6 +906,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
+      propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
       propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4877533016793219037}
@@ -911,11 +918,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8879438841225829029}
     - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
+      propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 3661938465223031245}
+    - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
       propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
       propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
+      propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
@@ -927,6 +942,10 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
+      propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Close
+      objectReference: {fileID: 0}
+    - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
       propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DungeonsSample.Dungeons.DungeonRoomDoor, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -935,11 +954,19 @@ PrefabInstance:
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
+      propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: DungeonsSample.Dungeons.DungeonRoomDoor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
       propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
       propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -6346162315133059771, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}
+      propertyPath: onPlayerEnter.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3393185442029483515, guid: 2ba3c12127f967544b8a7c355212a1f5, type: 3}

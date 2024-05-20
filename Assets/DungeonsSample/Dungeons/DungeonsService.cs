@@ -2,6 +2,7 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using RealityCollective.ServiceFramework.Services;
+using RealityCollective.Utilities.Extensions;
 using UnityEngine;
 
 namespace DungeonsSample.Dungeons
@@ -14,6 +15,7 @@ namespace DungeonsSample.Dungeons
             : base(name, priority) { }
 
         private DungeonFeatureControlServiceModule featureControlServiceModule;
+        private IGameService gameService;
 
         /// <inheritdoc/>
         public DungeonController CurrentDungeon { get; private set; }
@@ -35,12 +37,18 @@ namespace DungeonsSample.Dungeons
                 return;
             }
 
+            gameService = ServiceManager.Instance.GetService<IGameService>();
             featureControlServiceModule = ServiceManager.Instance.GetService<IDungeonsServiceModule>() as DungeonFeatureControlServiceModule;
         }
 
         /// <inheritdoc/>
         public void EnterDungeon(DungeonController dungeon)
         {
+            if (CurrentDungeon.IsNotNull())
+            {
+                gameService.UnloadLevel(CurrentDungeon.gameObject.scene);
+            }
+
             CurrentDungeon = dungeon;
             IsCleared = false;
             featureControlServiceModule.UpdateFeatures(CurrentDungeon.Data);

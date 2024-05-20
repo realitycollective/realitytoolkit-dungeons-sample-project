@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f79051121fc0f4489954e49b66f075, type: 3}
   m_Name: DungeonRoom_05_Interactions
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: Interactions
+  description: Great, you have mastered the art of moving around in a virtual environment!
+    Let's explore the toolkit's interactions capabilities next.
   previousRoom: {fileID: 11400000, guid: 9163fa8c51b66994692fb7e94c01d1fa, type: 2}
+  freeMovement: 1
+  teleportation: 1
+  anchorsOnly: 0

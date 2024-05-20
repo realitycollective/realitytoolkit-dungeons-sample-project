@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f79051121fc0f4489954e49b66f075, type: 3}
   m_Name: DungeonRoom_04_Rig_Bounds
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: Player Bounds
+  description: The player bounds system is an additional great feature of the tookit's
+    player module. You can use it to define where the player is supposed to be and
+    where not. This way we can prevent the player from moving physically where they
+    are not supposed to be.
   previousRoom: {fileID: 11400000, guid: 5f08a6fefa120aa4182935a007d6f4cb, type: 2}
   freeMovement: 1
   teleportation: 1

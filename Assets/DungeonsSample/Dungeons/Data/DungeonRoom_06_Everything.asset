@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f79051121fc0f4489954e49b66f075, type: 3}
   m_Name: DungeonRoom_06_Everything
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: Anything goes!
+  description: In this dungeon everything you've learned so far is enabled. And you'll
+    need it to clear the room! Check out the source code of the experience and get
+    started developing with Reality Toolkit!
   previousRoom: {fileID: 11400000, guid: 4b9b943d62f19794c965300cafd8e764, type: 2}
+  freeMovement: 1
+  teleportation: 1
+  anchorsOnly: 0

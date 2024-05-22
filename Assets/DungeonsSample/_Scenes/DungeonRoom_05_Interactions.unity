@@ -126,9 +126,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 890079777498843396, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_Size
+      value: 0.45856357
+      objectReference: {fileID: 0}
+    - target: {fileID: 890079777498843396, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_Value
+      value: 1.0529337
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746698221592631967, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746698221592631967, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746698221592631967, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1972900085979005877, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
       propertyPath: m_Name
       value: DungeonRoom_05_Interactions
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271317781098177819, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271317781098177819, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271317781098177819, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458343070103473008, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577917849604712694, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7962722722938565317, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
       propertyPath: m_LocalPosition.x
@@ -169,6 +209,30 @@ PrefabInstance:
     - target: {fileID: 7962722722938565317, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046802625872614441, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046802625872614441, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046802625872614441, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 419
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046802625872614441, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046802625872614441, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 241.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046802625872614441, guid: 9b2d274a1e798e841a0c053e37662a36, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -558.30396
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

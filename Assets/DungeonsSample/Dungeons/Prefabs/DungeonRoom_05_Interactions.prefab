@@ -881,7 +881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 241.5, y: -558.2705}
+  m_AnchoredPosition: {x: 241.5, y: -558.2672}
   m_SizeDelta: {x: 419, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5043076630414098014
@@ -1124,8 +1124,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7822562517369191685}
   m_HandleRect: {fileID: 1746698221592631967}
   m_Direction: 2
-  m_Value: 1.0000091
-  m_Size: 0.45855778
+  m_Value: 1.0000036
+  m_Size: 0.45856094
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2077,7 +2077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7657916524522245098, guid: f86d3141c4c85b04ab22f2e7cf5f7639, type: 3}
       propertyPath: m_Name
-      value: Interactable_Cube
+      value: Interactable_Cube_Direct
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2671,7 +2671,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3831568250518546697, guid: 2b4cbce0f1eac3448b2b5cfea7054813, type: 3}
       propertyPath: m_Name
-      value: Interactable_Monkey
+      value: Interactable_Monkey_Direct
       objectReference: {fileID: 0}
     - target: {fileID: 4496747098894693299, guid: 2b4cbce0f1eac3448b2b5cfea7054813, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2733,7 +2733,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 196885836634824585, guid: 248e806d2744df94b857b3cb10c290d2, type: 3}
       propertyPath: m_Name
-      value: Interactable_Ball
+      value: Interactable_Ball_Direct
       objectReference: {fileID: 0}
     - target: {fileID: 716259311606351155, guid: 248e806d2744df94b857b3cb10c290d2, type: 3}
       propertyPath: m_LocalPosition.x

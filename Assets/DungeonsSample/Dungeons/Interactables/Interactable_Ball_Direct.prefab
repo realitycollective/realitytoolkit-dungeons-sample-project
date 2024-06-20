@@ -144,8 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: 
-  directInteraction: 0
-  farInteraction: 1
+  directInteraction: 1
+  farInteraction: 0
   selectAction:
     profileGuid: 00000000000000000000000000000000
     id: 0

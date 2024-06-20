@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrder: 0
   targetHandedness: 1
-  grabPose: {fileID: 11400000, guid: bab17c941f7b94841b89324826d87b33, type: 2}
+  grabPose: {fileID: 11400000, guid: c99f552f1180e3b478fb4398507c7c34, type: 2}
 --- !u!114 &746923198699868631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrder: 0
   targetHandedness: 2
-  grabPose: {fileID: 11400000, guid: e985a76454d325141986d1984f957d4e, type: 2}
+  grabPose: {fileID: 11400000, guid: 5a0aa6f6b2222954d8a3c8e7298b4c28, type: 2}
 --- !u!114 &2537595822933990439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrder: 0
   targetHandedness: 1
-  grabPoseLocalOffset: {x: 0, y: 0, z: 0}
+  grabPoseLocalOffset: {x: -0.0345, y: -0.0526, z: 0.0395}
   grabPoseLocalRotationOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &2499476760951474727
 MonoBehaviour:
@@ -218,5 +218,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrder: 0
   targetHandedness: 2
-  grabPoseLocalOffset: {x: 0, y: 0, z: 0}
+  grabPoseLocalOffset: {x: 0.0345, y: -0.0526, z: 0.0395}
   grabPoseLocalRotationOffset: {x: 0, y: 0, z: 0}

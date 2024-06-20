@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252c4320ebe746840813009e75615947, type: 3}
+  m_Name: HandPose_GrabBall_Left
+  m_EditorClassIdentifier: 
+  recordedHandedness: 1
+  poses:
+  - Joint: 0
+    Pose:
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.3125748, y: 0.76965183, z: 0.018750938, w: 0.5564005}
+  - Joint: 2
+    Pose:
+      position: {x: 0.0267, y: -0.0391, z: 0.0088}
+      rotation: {x: 0.35747936, y: 0.91272473, z: 0.08061186, w: 0.1806758}
+  - Joint: 3
+    Pose:
+      position: {x: -0.03258824, y: 0, z: 0}
+      rotation: {x: -0.13396525, y: 0.100900576, z: 0.021580994, w: 0.9855997}
+  - Joint: 4
+    Pose:
+      position: {x: -0.026371535, y: 1.4210854e-16, z: -1.0658141e-16}
+      rotation: {x: 0.052331273, y: -0.068926625, z: -0.020936344, w: 0.9960283}
+  - Joint: 5
+    Pose:
+      position: {x: -0.034079567, y: -7.105427e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+  - Joint: 6
+    Pose:
+      position: {x: 0.087078705, y: -0.035099912, z: -0.0068139634}
+      rotation: {x: 0.018485393, y: 0.73278993, z: 0.6625703, w: 0.15387574}
+  - Joint: 7
+    Pose:
+      position: {x: -0.04157472, y: 0, z: 7.105427e-17}
+      rotation: {x: 0.000000047730275, y: 0.000000014901159, z: -0.11004436, w: 0.99392664}
+  - Joint: 8
+    Pose:
+      position: {x: -0.022153005, y: 7.105427e-17, z: 0}
+      rotation: {x: -0.000000023026324, y: 0.000000040453454, z: -0.041369107, w: 0.99914396}
+  - Joint: 10
+    Pose:
+      position: {x: -0.029121809, y: -1.7763567e-16, z: -7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+  - Joint: 11
+    Pose:
+      position: {x: 0.09142233, y: -0.0095321555, z: -0.010838781}
+      rotation: {x: -0.03365181, y: 0.6480088, z: 0.75659454, w: 0.08072687}
+  - Joint: 12
+    Pose:
+      position: {x: -0.045967426, y: 1.4210854e-16, z: 7.105427e-17}
+      rotation: {x: 0.000000039115545, y: 0.00000008940696, z: -0.2054139, w: 0.9786752}
+  - Joint: 13
+    Pose:
+      position: {x: -0.029590597, y: 3.5527136e-17, z: 0}
+      rotation: {x: 1.1443316e-16, y: 4.8088383e-17, z: -0.06577556, w: 0.99783444}
+  - Joint: 15
+    Pose:
+      position: {x: -0.02646961, y: -1.7763568e-17, z: -2.1316282e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+  - Joint: 16
+    Pose:
+      position: {x: 0.089531735, y: 0.012713979, z: -0.0018533266}
+      rotation: {x: -0.10180098, y: 0.5692992, z: 0.8152097, w: 0.031114789}
+  - Joint: 17
+    Pose:
+      position: {x: -0.038572025, y: 0, z: 7.105427e-17}
+      rotation: {x: -0.000000049360096, y: 0.000000052154064, z: -0.10076256, w: 0.9949105}
+  - Joint: 18
+    Pose:
+      position: {x: -0.025775291, y: -1.7763568e-17, z: -1.4210854e-16}
+      rotation: {x: -0.000000008717767, y: 0.00000006003537, z: -0.15800305, w: 0.9874386}
+  - Joint: 20
+    Pose:
+      position: {x: -0.024214907, y: -1.4210854e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+  - Joint: 21
+    Pose:
+      position: {x: 0.031271502, y: 0.01906803, z: 0.01150759}
+      rotation: {x: -0.46932158, y: -0.083111495, z: 0.08672836, w: 0.8748188}
+  - Joint: 22
+    Pose:
+      position: {x: 0.053570647, y: 0.0024384, z: -0.0014630399}
+      rotation: {x: -0.018607812, y: 0.007520443, z: 0.9968843, w: 0.076282546}
+  - Joint: 23
+    Pose:
+      position: {x: -0.03335595, y: 1.4210854e-16, z: -1.4210854e-16}
+      rotation: {x: -0.000000036787227, y: -0.00000006088519, z: -0.15134373, w: 0.98848116}
+  - Joint: 24
+    Pose:
+      position: {x: -0.017418223, y: 1.3322676e-16, z: 7.105427e-17}
+      rotation: {x: 0.000000062596335, y: -0.000000009360975, z: -0.04647355, w: 0.9989195}
+  - Joint: 25
+    Pose:
+      position: {x: -0.019441238, y: -6.217249e-17, z: 7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}

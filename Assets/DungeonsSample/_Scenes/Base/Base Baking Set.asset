@@ -55,6 +55,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: -27, y: -27, z: -27}
         minSubdiv: 0
+        minBrickPos: {x: 18, y: 18, z: 18}
+        maxBrickPosPlusOne: {x: 28, y: 28, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: -1, y: -1, z: 0}
       index: 9
@@ -66,6 +69,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: -27, y: -27, z: 0}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 0, z: 0}
+        maxBrickPosPlusOne: {x: 28, y: 28, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: -1, y: -1, z: 1}
       index: 18
@@ -77,6 +83,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: -27, y: -27, z: 27}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 0, z: 0}
+        maxBrickPosPlusOne: {x: 28, y: 28, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: -1, y: -1, z: 2}
       index: 27
@@ -88,6 +97,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: -27, y: -27, z: 54}
         minSubdiv: 0
+        minBrickPos: {x: 18, y: 18, z: 0}
+        maxBrickPosPlusOne: {x: 28, y: 28, z: 10}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: -1, y: 0, z: -1}
       index: 3
@@ -99,6 +111,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: -27, y: 0, z: -27}
         minSubdiv: 0
+        minBrickPos: {x: 18, y: 0, z: 18}
+        maxBrickPosPlusOne: {x: 28, y: 10, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: -1, y: 0, z: 0}
       index: 12
@@ -110,6 +125,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: -27, y: 0, z: 0}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 0, z: 0}
+        maxBrickPosPlusOne: {x: 28, y: 28, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: -1, y: 0, z: 1}
       index: 21
@@ -121,6 +139,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: -27, y: 0, z: 27}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 0, z: 0}
+        maxBrickPosPlusOne: {x: 28, y: 28, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: -1, y: 0, z: 2}
       index: 30
@@ -132,6 +153,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: -27, y: 0, z: 54}
         minSubdiv: 0
+        minBrickPos: {x: 18, y: 0, z: 0}
+        maxBrickPosPlusOne: {x: 28, y: 10, z: 10}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: 0, y: -1, z: -1}
       index: 1
@@ -143,6 +167,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: 0, y: -27, z: -27}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 18, z: 18}
+        maxBrickPosPlusOne: {x: 10, y: 28, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: 0, y: -1, z: 0}
       index: 10
@@ -154,6 +181,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: 0, y: -27, z: 0}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 0, z: 0}
+        maxBrickPosPlusOne: {x: 28, y: 28, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: 0, y: -1, z: 1}
       index: 19
@@ -165,6 +195,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: 0, y: -27, z: 27}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 0, z: 0}
+        maxBrickPosPlusOne: {x: 28, y: 28, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: 0, y: -1, z: 2}
       index: 28
@@ -176,6 +209,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: 0, y: -27, z: 54}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 18, z: 0}
+        maxBrickPosPlusOne: {x: 10, y: 28, z: 10}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: 0, y: 0, z: -1}
       index: 4
@@ -187,6 +223,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: 0, y: 0, z: -27}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 0, z: 18}
+        maxBrickPosPlusOne: {x: 10, y: 10, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: 0, y: 0, z: 0}
       index: 13
@@ -198,6 +237,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: 0, y: 0, z: 0}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 0, z: 0}
+        maxBrickPosPlusOne: {x: 28, y: 28, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: 0, y: 0, z: 1}
       index: 22
@@ -209,6 +251,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: 0, y: 0, z: 27}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 0, z: 0}
+        maxBrickPosPlusOne: {x: 28, y: 28, z: 28}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
     - position: {x: 0, y: 0, z: 2}
       index: 31
@@ -220,6 +265,9 @@ MonoBehaviour:
       indirectionEntryInfo:
       - positionInBricks: {x: 0, y: 0, z: 54}
         minSubdiv: 0
+        minBrickPos: {x: 0, y: 0, z: 0}
+        maxBrickPosPlusOne: {x: 10, y: 10, z: 10}
+        hasMinMax: 1
         hasOnlyBiggerBricks: 0
   m_SerializedPerSceneCellList:
   - sceneGUID: 3d447a03a09470d41b833e0c181d94a5

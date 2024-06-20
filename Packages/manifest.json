@@ -1,11 +1,10 @@
 {
   "dependencies": {
-    "com.realitycollective.service-framework": "1.0.8-pre.1",
-    "com.realitytoolkit.core": "1.0.0-pre.51",
-    "com.realitytoolkit.locomotion": "1.0.4",
+    "com.realitytoolkit.core": "1.0.0-pre.56",
+    "com.realitytoolkit.locomotion": "1.0.5-pre.1",
     "com.realitytoolkit.metaplatform": "1.0.0-pre.17",
     "com.realitytoolkit.pico": "1.0.2-pre.10",
-    "com.realitytoolkit.player": "1.0.5-pre.6",
+    "com.realitytoolkit.player": "1.0.5-pre.7",
     "com.unity.ai.navigation": "2.0.0",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.ide.rider": "3.0.28",

@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3449970159888536098, guid: d738afad93ce78a40ba3b17a6331e795, type: 3}
       propertyPath: m_Name
-      value: Interactable_Cube
+      value: Interactable_Cube_Direct
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65,6 +65,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3449970159888536098, guid: d738afad93ce78a40ba3b17a6331e795, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8754381977523621898}
+    - targetCorrespondingSourceObject: {fileID: 3449970159888536098, guid: d738afad93ce78a40ba3b17a6331e795, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4553240039164669397}
+    - targetCorrespondingSourceObject: {fileID: 3449970159888536098, guid: d738afad93ce78a40ba3b17a6331e795, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6825203599146287217}
     - targetCorrespondingSourceObject: {fileID: 3449970159888536098, guid: d738afad93ce78a40ba3b17a6331e795, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5314879358534033015}
@@ -152,6 +158,36 @@ MonoBehaviour:
     axisConstraint: 2
   focusMode: 1
   activationMode: 0
+--- !u!114 &4553240039164669397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7657916524522245098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0e3ce2fd8a2854c9b9d196ed7ec74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrder: 0
+  targetHandedness: 1
+  grabPose: {fileID: 11400000, guid: b313d261a56774d44913891b20cfcb3c, type: 2}
+--- !u!114 &6825203599146287217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7657916524522245098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0e3ce2fd8a2854c9b9d196ed7ec74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrder: 0
+  targetHandedness: 2
+  grabPose: {fileID: 11400000, guid: b3eb224cd27b09e44b0b844d29c81a56, type: 2}
 --- !u!114 &5314879358534033015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,8 +202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrder: 0
   targetHandedness: 1
-  grabPoseLocalOffset: {x: 0, y: 0, z: 0}
-  grabPoseLocalRotationOffset: {x: 0, y: 0, z: 0}
+  grabPoseLocalOffset: {x: 0.1, y: 0.08, z: -0.1}
+  grabPoseLocalRotationOffset: {x: -36.8, y: 11.66, z: 362.3}
 --- !u!114 &3903843032413350787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,5 +218,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrder: 0
   targetHandedness: 2
-  grabPoseLocalOffset: {x: 0, y: 0, z: 0}
-  grabPoseLocalRotationOffset: {x: 0, y: 0, z: 0}
+  grabPoseLocalOffset: {x: -0.1, y: 0.08, z: -0.1}
+  grabPoseLocalRotationOffset: {x: -36.8, y: -11.66, z: -362.3}

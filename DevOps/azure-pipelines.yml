@@ -28,7 +28,7 @@ stages:
       inputs:
         buildFlow: 'profile'
         buildTarget: 'Android'
-        buildProfile: 'Assets/Settings/Build Profiles/Meta Quest Client.asset'
+        buildProfile: 'Assets/Settings/Build Profiles/Meta Quest.asset'
         outputPath: '$(Build.BinariesDirectory)'
         outputFileName: 'ssv-meta-quest'
         androidSignAppBundle: true

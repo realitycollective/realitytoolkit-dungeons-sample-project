@@ -1,0 +1,88 @@
+trigger:
+- main
+- development
+
+variables:
+- group: rc-signing
+- group: rc-meta-store
+
+stages:
+- stage: BuildStage
+  displayName: Build
+  pool:
+    name: Unity Windows
+  jobs:
+  - job: BuildMetaQuestAppJob
+    displayName: 'Build Meta Quest App'
+    steps:
+    - checkout: self
+      submodules: true
+    - task: DownloadSecureFile@1
+      name: downloadKeystore
+      inputs:
+        secureFile: $(keystore.name)
+    - task: UnitySetupTask@2
+      inputs:
+        installAndroidModule: true
+    - task: UnityBuildTask@3
+      inputs:
+        buildFlow: 'profile'
+        buildTarget: 'Android'
+        buildProfile: 'Assets/Settings/Build Profiles/Meta Quest Client.asset'
+        outputPath: '$(Build.BinariesDirectory)'
+        outputFileName: 'ssv-meta-quest'
+        androidSignAppBundle: true
+        androidKeystoreName: '$(downloadKeystore.secureFilePath)'
+        androidKeystorePass: '$(keystore.password)'
+        androidKeystoreAliasName: '$(keystore.alias.name)'
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '$(Build.BinariesDirectory)'
+        Contents: '**'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'
+        CleanTargetFolder: true
+        OverWrite: true
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(Build.ArtifactStagingDirectory)'
+        artifact: 'ssv-meta-quest'
+        publishLocation: 'pipeline'
+- stage: DeployToAlphaStage
+  displayName: Deploy Alpha Build
+  dependsOn: BuildStage
+  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/development'))
+  pool:
+    name: Unity Windows
+  jobs:
+  - job: DeployMetaQuestAppJob
+    displayName: Deploy Meta Quest App
+    steps:
+    - task: DownloadPipelineArtifact@2
+      inputs:
+        buildType: 'current'
+        artifactName: 'ssv-meta-quest'
+        targetPath: '$(Build.ArtifactStagingDirectory)'
+    - task: PowerShell@2
+      inputs:
+        targetType: 'inline'
+        script: '.\"DevOps/ovr-platform-util.exe" upload-quest-build --app_id $(META_APP_ID) --app_secret $(META_APP_SECRET) --apk "$(Build.ArtifactStagingDirectory)/ssv-meta-quest.apk" --channel alpha'
+        failOnStderr: true
+- stage: DeployToRCStage
+  displayName: Deploy Release Candidate
+  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/main'))
+  pool:
+    name: Unity Windows
+  jobs:
+  - job: DeployMetaQuestAppJob
+    displayName: Deploy Meta Quest App
+    steps:
+    - task: DownloadPipelineArtifact@2
+      inputs:
+        buildType: 'current'
+        artifactName: 'ssv-meta-quest'
+        targetPath: '$(Build.ArtifactStagingDirectory)'
+    - task: PowerShell@2
+      inputs:
+        targetType: 'inline'
+        script: '.\"DevOps/ovr-platform-util.exe" upload-quest-build --app_id $(META_APP_ID) --app_secret $(META_APP_SECRET) --apk "$(Build.ArtifactStagingDirectory)/ssv-meta-quest.apk" --channel rc'
+        failOnStderr: true

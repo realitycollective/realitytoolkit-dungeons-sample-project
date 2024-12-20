@@ -72,3 +72,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 .utmp
 *.keystore
+
+# Performance Test Run Reports
+/[Aa]ssets/[Rr]esources/PerformanceTestRunInfo.*
+/[Aa]ssets/[Rr]esources/PerformanceTestRunSettings.*

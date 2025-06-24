@@ -30,7 +30,7 @@ stages:
         buildTarget: 'Android'
         buildProfile: 'Assets/Settings/Build Profiles/Meta Quest.asset'
         outputPath: '$(Build.BinariesDirectory)'
-        outputFileName: 'ssv-meta-quest'
+        outputFileName: 'meta-quest-app'
         androidSignAppBundle: true
         androidKeystoreName: '$(downloadKeystore.secureFilePath)'
         androidKeystorePass: '$(keystore.password)'
@@ -45,7 +45,7 @@ stages:
     - task: PublishPipelineArtifact@1
       inputs:
         targetPath: '$(Build.ArtifactStagingDirectory)'
-        artifact: 'ssv-meta-quest'
+        artifact: 'meta-quest-app'
         publishLocation: 'pipeline'
 - stage: DeployToAlphaStage
   displayName: Deploy Alpha Build
@@ -60,12 +60,12 @@ stages:
     - task: DownloadPipelineArtifact@2
       inputs:
         buildType: 'current'
-        artifactName: 'ssv-meta-quest'
+        artifactName: 'meta-quest-app'
         targetPath: '$(Build.ArtifactStagingDirectory)'
     - task: PowerShell@2
       inputs:
         targetType: 'inline'
-        script: '.\"DevOps/ovr-platform-util.exe" upload-quest-build --app_id $(META_APP_ID) --app_secret $(META_APP_SECRET) --apk "$(Build.ArtifactStagingDirectory)/ssv-meta-quest.apk" --channel alpha'
+        script: '.\"DevOps/ovr-platform-util.exe" upload-quest-build --app_id $(META_APP_ID) --app_secret $(META_APP_SECRET) --apk "$(Build.ArtifactStagingDirectory)/meta-quest-app.apk" --channel alpha'
         failOnStderr: true
 - stage: DeployToRCStage
   displayName: Deploy Release Candidate
@@ -79,10 +79,10 @@ stages:
     - task: DownloadPipelineArtifact@2
       inputs:
         buildType: 'current'
-        artifactName: 'ssv-meta-quest'
+        artifactName: 'meta-quest-app'
         targetPath: '$(Build.ArtifactStagingDirectory)'
     - task: PowerShell@2
       inputs:
         targetType: 'inline'
-        script: '.\"DevOps/ovr-platform-util.exe" upload-quest-build --app_id $(META_APP_ID) --app_secret $(META_APP_SECRET) --apk "$(Build.ArtifactStagingDirectory)/ssv-meta-quest.apk" --channel rc'
+        script: '.\"DevOps/ovr-platform-util.exe" upload-quest-build --app_id $(META_APP_ID) --app_secret $(META_APP_SECRET) --apk "$(Build.ArtifactStagingDirectory)/meta-quest-app.apk" --channel rc'
         failOnStderr: true
